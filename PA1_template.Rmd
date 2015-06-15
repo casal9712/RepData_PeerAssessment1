@@ -179,6 +179,7 @@ weekday<-computed_data[computed_data$wkday_wkend=="weekday",]
 library(lattice)
 xyplot(avg_steps ~ int | factor(wkday_wkend), data=final_pattern, 
        type = 'l',
+	 layout=c(1,2),
        xlab="Interval",
        ylab="Number of Steps")
 ```
